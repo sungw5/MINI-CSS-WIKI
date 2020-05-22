@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<script type="text/javascript">
+    $(window).resize(function(){resizeYoutube();});
+    $(function(){resizeYoutube();});
+    function resizeYoutube(){ $("iframe").each(function(){ if( /^https?:\/\/www.youtube.com\/embed\//g.test($(this).attr("src")) ){ $(this).css("width","100%"); $(this).css("height",Math.ceil( parseInt($(this).css("width")) * 480 / 854 ) + "px");} }); }
+</script>
+  
+
+<nav id="navbar">
+    <header><a href="intro.html">Sung Woo's CSS WIKI</a></header>
+    <ul>
+        <li><a class="nav-link" href="intro.html">Introduction</a></li>
+        <li><a class="nav-link" href="link.html">Link and Import</a></li>
+        <li><a class="nav-link" href="grid.html">Grid</a></li>
+        <li><a class="nav-link" href="flex.html">Flex</a></li>
+        <li><a class="nav-link" href="transition.html">Transition</a></li>
+        <li><a class="nav-link" href="minify.html">CSS Minify</a></li>
+    </ul>
+</nav>
+
+<main id="main-doc">
+    <section class="main-section" id="Introduction">
+        <header>Grid</header>
+        <article>
+            <h1>그리드란?</h1>
+            <p> CSS Grid를 통해 웹페이지 내부의 레이아웃 시스템을 손쉽게 구현 할 수 있습니다.
+                플렉스 박스가 1차원 레이아웃을 도와준다면, 그리드는 2차원에 조금 더 가깝다고 볼 수 있습니다. 
+                그리드와 플렉스와 같은 모듈이 없었다면, 웹페이지 레이아웃 생성은 훨씬 더 복잡하고 어려울 것입니다.
+            </p>
+            <h1>꼭 알아야 할 것</h1>
+            <p>Container(부모) 그리고 그속에 Item(자식) 을 통해 그리드를 표현 할 수 있습니다.</p>
+            <h1>그리드 Cheetsheet 정리</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Property</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>grid-template-rows</td>
+                        <td>행 크기</td>
+                    </tr>
+                    <tr>
+                        <td>grid-template-columns</td>
+                        <td>열 크기</td>
+                    </tr>
+                    <tr>
+                        <td>grid-template-ares</td>
+                        <td>영역 참조 템플릿 생성</td>
+                    </tr>
+                    <tr>
+                        <td>row-gap(grid-row-gap)</td>
+                        <td>행과 행 사이의 간격</td>
+                    </tr>
+                    <tr>
+                        <td>column-gap(grid-column-gap)</td>
+                        <td>열과 열 사이의 간격</td>
+                    </tr>
+                    <tr>
+                        <td>grid-auto-rows</td>
+                        <td>전체적인 행의 크기를 조정</td>
+                    </tr>
+                    <tr>
+                        <td>grid-auto-columns</td>
+                        <td>전체적인 열의 크기를 조정</td>
+                    </tr>
+                    <tr>
+                        <td>grid-auto-flow</td>
+                        <td>row/column/row dense 지정에 따라 자동적으로 배치/td>
+                    </tr>
+                    <tr>
+                        <td>justify-content</td>
+                        <td>그리드 콘텐츠들을 수평으로 정렬(오뎅꼬치 가로로 꽂는 것처럼)</td>
+                    </tr>
+                    <tr>
+                        <td>align-content</td>
+                        <td>그리드 콘텐츠들을 수직으로 정렬(오뎅꼬치 가로로 꽃은 상태에서 위아래로)</td>
+                    </tr>
+                    <tr>
+                        <td>justify-items</td>
+                        <td>그리드 내부개체들을 수평으로 정렬</td>
+                    </tr>
+                    <tr>
+                        <td>align-items</td>
+                        <td>그리드 내부개체들을 수직으로 정렬</td>
+                    </tr>
+                    <tr>
+                        <td>display: grid</td>
+                        <td>그리드 컨테이너 정의</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h1>정리영상</h1>
+            
+            <iframe width="854" height="480" 
+            src="https://www.youtube.com/embed/b0aSTppYUFE" 
+            frameborder="0" allowfullscreen="">
+            </iframe>
+            <p>출처: <a href="https://www.youtube.com/watch?time_continue=392&v=b0aSTppYUFE&feature=emb_logo">https://www.youtube.com/watch?time_continue=392&v=b0aSTppYUFE&feature=emb_logo</a></p>
+
+
+                        
+        </article>
+    </section>
+</main>
+<body>
+    
+</body>
+
+</html>

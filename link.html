@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<nav id="navbar">
+    <header><a href="intro.html">Sung Woo's CSS WIKI</a></header>
+    <ul>
+        <li><a class="nav-link" href="intro.html">Introduction</a></li>
+        <li><a class="nav-link" href="link.html">Link and Import</a></li>
+        <li><a class="nav-link" href="grid.html">Grid</a></li>
+        <li><a class="nav-link" href="flex.html">Flex</a></li>
+        <li><a class="nav-link" href="transition.html">Transition</a></li>
+        <li><a class="nav-link" href="minify.html">CSS Minify</a></li>
+    </ul>
+</nav>
+
+<main id="main-doc">
+    <section class="main-section" id="Introduction">
+        <header>Link and Import</header>
+        <article>
+            <h1>HTML 문서 밖의 CSS 파일 링크하기</h1>
+            <p>외부 스타일 시트: .css확장자 파일을 HTML에다 연결하는 방법.</p>
+            <p>외부 스타일 시트의 장점</p>
+            <ul>
+                <li>여러 HTML 파일들의 스타일 속성들을 동시에 관리
+                할 수 있으며, 코드의 중복을 방지해주므로 효율적이고 간편해진다.
+                </li>
+                <li>내부 스타일 시트, 인라인 스타일 보다
+                    CSS의 장점을 효과적으로 쓸 수 있다.</li>
+            </ul>
+    
+            <code>
+                <xmp><link rel="stylesheet" type="text/css" href="mystyle.css"></xmp>
+            </code>
+            <p>이와 같은 코드를 HTML 문서에 삽입하면 된다.</p>
+
+            <h1>내부 스타일 시트를 사용하고 싶다면?</h1>
+            <p>HTML 코드 속에다 스타일 태그를 삽입하면 된다.</p>
+            <code>
+                <xmp><style type="text/css">
+    Selector {property: value;}
+    h1 {color:red} 
+</style></xmp>
+            </code>
+         
+            
+        </article>
+    </section>
+</main>
+<body>
+    
+</body>
+
+</html>

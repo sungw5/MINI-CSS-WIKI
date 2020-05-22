@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<nav id="navbar">
+    <header><a href="intro.html">Sung Woo's CSS WIKI</a></header>
+    <ul>
+        <li><a class="nav-link" href="intro.html">Introduction</a></li>
+        <li><a class="nav-link" href="link.html">Link and Import</a></li>
+        <li><a class="nav-link" href="grid.html">Grid</a></li>
+        <li><a class="nav-link" href="flex.html">Flex</a></li>
+        <li><a class="nav-link" href="transition.html">Transition</a></li>
+        <li><a class="nav-link" href="minify.html">CSS Minify</a></li>
+    </ul>
+</nav>
+
+<main id="main-doc">
+    <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <article>
+            <h1>이 페이지는 무엇인가?</h1>
+            <p>간혹가다 까먹게되는 CSS 요소들을 정리 해놓은 위키 페이지입니다. 종종 헷갈리는
+                플렉스와 그리드 등등을 정리 해놓았습니다. 
+            </p>
+            <h1>CSS 의 적용 우선순위</h1>
+            <p>HTML 은 위에서부터 아래 순서대로 읽지만 CSS 에서는 따로 우선순위가 존재합니다.</p>
+            <ol>
+                <li>뒤에 !important; 붙인 속성 (;를 꼭 붙여야 함)</li>
+                <li>인라인 스타일 방식 (태그에 직접 style 을 넣어서 하는 방식)</li>
+                <li>내부 스타일 방식 (HTML 문서에서 직접 style을 넣은 방식)</li>
+                <li>id 로 지정한 속성</li>
+                <li>class 와 :(가상클래스) 로 지정한 속성</li>
+                <li>그냥 태그 이름으로 지정한 속성</li>
+                <li>외부 스타일 방식 (상속된 속성)</li>
+            </ol>
+            <p>강도는 1번이 가장 강함.</p>
+            <p>만약에 외부 스타일 방식에서 !important 로 지정하면 우선순위가 바뀜.</p>
+        </article>
+    </section>
+</main>
+<body>
+    
+</body>
+
+</html>

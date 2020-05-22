@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<nav id="navbar">
+    <header><a href="intro.html">Sung Woo's CSS WIKI</a></header>
+    <ul>
+        <li><a class="nav-link" href="intro.html">Introduction</a></li>
+        <li><a class="nav-link" href="link.html">Link and Import</a></li>
+        <li><a class="nav-link" href="grid.html">Grid</a></li>
+        <li><a class="nav-link" href="flex.html">Flex</a></li>
+        <li><a class="nav-link" href="transition.html">Transition</a></li>
+        <li><a class="nav-link" href="minify.html">CSS Minify</a></li>
+    </ul>
+</nav>
+
+<main id="main-doc">
+    <section class="main-section" id="Introduction">
+        <header>Flex</header>
+        <article>
+            <h2>플렉스란?</h2>
+            <p>복잡한 계산 없이 개체들의 레이아웃을 배치 할 수 있는 CSS3의 꿀템입니다.
+                뷰포트가 불명확한 반응형 디자인에도 간편하게 배치, 정렬, 분산 할 수 있게 도와줍니다.
+            </p>
+            <h2>플렉스의 정의</h2>
+            <pre>
+                <code>
+                    <span>.flex_container {</span>
+                        display: flex;
+                    }
+                </code>
+            </pre>
+            
+            <p>그리드와 마찬가지로 container 과 item에 정의하는
+                속성으로 나누어집니다. 
+            </p>
+            <ul>
+                <li>flex container 속성: flex-direction, flex-wrap, justify-content, align-items, align-content</li>
+                <li>flex item 속성: flex, flex-grow, flex-shrink, flex-basis, order</li>
+            </ul>
+            <img src="flex-base.jpg" alt="flex-image" style="width: 700px;">
+            <h2>flex container</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Property</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>flex-direction</td>
+                        <td>flex items의 축(main-axis)을 설정 (기본값: row)</td>
+                    </tr>
+                    <tr>
+                        <td>flex-wrap</td>
+                        <td>flex-items의 줄묶음(줄 바꿈)을 설정 (기본값: nowrap // nowrap:강제로 한줄에 배치 / wrap: 여러행으로 나눠서 배치)</td>
+                    </tr>
+                    <tr>
+                        <td>justify-content</td>
+                        <td>주 축(main-axis)의 정렬 방법을 설정</td>
+                    </tr>
+                    <tr>
+                        <td>align-content</td>
+                        <td>교차 축(cross-axis)의 정렬 방법을 설정</td>
+                    </tr>
+                    <tr>
+                        <td>align-items</td>
+                        <td>교차 축에서 items의 정렬 방법을 설정</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h1>flex-direction</h1><img src="flex-direction.jpg" alt="flex-direction-image" style="width:700px;">
+            <h1>flex의 축 (axis)</h1><img src="flex-direction-main-axis.jpg" alt="main-axis-image" style="width:700px;">
+            <h1>flex-wrap</h1><img src="flex-wrap.jpg" alt="flex-wrap-image" style="width:700px;">
+            <h1>justify-content</h1><img src="flex-justify-content.jpg" alt="flex-justify-content-image" style="width: 700px;;">
+            <h1>align-content</h1><img src="flex-align-content.jpg" alt="flex-align-content-image" style="width:700px;">
+            <h1>align-items</h1><img src="flex-align-items.jpg" alt="flex-align-items-image" style="width:700px;">
+
+            <h2>flex items</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Property</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>flex-grow</td>
+                        <td>flex item의 증가 너비 비율을 설정</td>
+                    </tr>
+                    <tr>
+                        <td>flex-shrink</td>
+                        <td>flex item의 감소 너비 비율을 설정</td>
+                    </tr>
+                    <tr>
+                        <td>flex-basis</td>
+                        <td>flex-item의 (공간 배분 전) 기본 너비 설정</td>
+                    </tr>
+                    <tr>
+                        <td>align-self</td>
+                        <td>교차 축(cross-axis)에서 item의 정렬 방법을 설정</td>
+                    </tr>
+                    <tr>
+                        <td>order</td>
+                        <td>flex item의 순서 설정</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h1>flex-grow</h1><img src="flex-grow.jpg" alt="flex-grow-image" style="width:500px;">
+            <h1>flex-shrink</h1><img src="flex-shrink.jpg" alt="flex-shrink.image" style="width:730px;">
+            <h1>align-self</h1><img src="flex-align-self.jpg" alt="flex-align-self-image" style="width:650px;">
+            <h1>order</h1><img src="flex-order.jpg" alt="flex-order-image" style="width:600px;">
+            <p style="font-size: small;">출처: <a href="https://heropy.blog/2018/11/24/css-flexible-box/">https://heropy.blog/2018/11/24/css-flexible-box/</a></p>
+        </article>
+    </section>
+</main>
+<body>
+    
+</body>
+
+</html>
